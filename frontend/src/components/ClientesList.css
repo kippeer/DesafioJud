@@ -1,0 +1,17 @@
+/* src/components/ClientesList.css */
+
+.clientes-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .clientes-table th, .clientes-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .clientes-table th {
+    background-color: #f2f2f2;
+  }
+  

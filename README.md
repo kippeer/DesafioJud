@@ -39,11 +39,16 @@ CREATE TABLE clientes (
    cd backend
 Instale as dependências do Node.js:
 
+
+// dependencias utilizadas //
 npm install express pg
+npm install cors 
 //
-npm install
+
+
+npm install 
 //
-Configure as variáveis de ambiente no arquivo .env:
+Configure as variáveis de ambiente no arquivo .env: ( OPCIONAL) PORT=5000
 
 ////execute o portgresSQL
 Crie a tabela,  no postgreSQL
@@ -51,17 +56,21 @@ Crie a tabela,  no postgreSQL
 CREATE TABLE .... 
  
 
-////execute o portgresSQL
+/////////////////
 
 
-PORT=5000
-Lembre-se de que você pode ajustar a porta conforme necessário.
+
+
 
 Execute o servidor Node.js:
 
 
-Inicie o servidor backend
+Inicie o servidor backend :
+
+
 node server.js
+
+
 O servidor será iniciado na porta configurada (por padrão, 5000).
 
 Utilização da API

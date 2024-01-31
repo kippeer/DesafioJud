@@ -3,9 +3,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const pool = require('./db'); // Importa a configuração do banco de dados
-
+const cors = require('cors');
 const app = express();
 
+app.use(cors()); // Use o middleware cors
 app.use(bodyParser.json());
 
 // Rota para cadastrar um novo cliente
@@ -140,6 +141,28 @@ app.get('/api/clientes/coordenadas/:coordenada_x/:coordenada_y', async (req, res
     }
 });
 
+app.get('/api/clientes/search', async (req, res) => {
+    try {
+      const filtro = req.query.filtro;
+      const result = await pool.query(`
+        SELECT * FROM clientes
+        WHERE id::text ILIKE $1
+           OR nome ILIKE $1
+           OR email ILIKE $1
+           OR telefone ILIKE $1
+      `, [`%${filtro}%`]);
+  
+      const clientes = result.rows.map(cliente => ({
+        ...cliente,
+        coordenadas: { x: cliente.coordenada_x, y: cliente.coordenada_y }
+      }));
+  
+      res.json(clientes);
+    } catch (error) {
+      console.error('Erro ao buscar clientes:', error);
+      res.status(500).json({ message: 'Erro ao buscar clientes.' });
+    }
+  });
 
 // ...
 
