@@ -45,7 +45,7 @@ npm install express pg
 npm install cors 
 npm install tsp-solver
 
-//
+
 
 
 npm install 
@@ -113,6 +113,25 @@ npm install react-icons
 npm install  react-hook-form 
 npm install react-router-dom
 npm install axios
+
+"@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.21.3",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+/////////
+node -v
+v14.21.3
+
+////////////
+npm -v
+6.14.18
 
 para iniciar 
 
