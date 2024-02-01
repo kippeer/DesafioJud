@@ -1,5 +1,5 @@
 
-BACKEND ///////////////////////////////
+# README - Backend
 
 Antes de começar, certifique-se de ter instalado o Node.js e o PostgreSQL na sua máquina.
 
@@ -19,8 +19,7 @@ Antes de começar, certifique-se de ter instalado o Node.js e o PostgreSQL na su
   port: 5432,
 
 
-2. Execute o script SQL fornecido em `scripts/create-table.sql` para criar a tabela `clientes`.
-EXEMPLO
+2. Execute o script SQL fornecido em scripts/create-table.sql para criar a tabela clientes.
 
 CREATE TABLE clientes (
   id SERIAL PRIMARY KEY,
@@ -76,6 +75,7 @@ node server.js
 O servidor será iniciado na porta configurada (por padrão, 5000).
 
 Utilização da API
+
 Buscar por ID:
 
 URL: http://localhost:5000/api/clientes/id/1
@@ -104,7 +104,7 @@ Substitua 10 pelo valor da coordenada X desejada e 20 pelo valor da coordenada Y
 ///////////////////////////////////
 
 
-frontend , 
+README - Frontend
 
 cd frontend 
 
