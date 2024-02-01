@@ -57,7 +57,7 @@ const Rota = () => {
                             ))}
                         </tbody>
                     </table>
-                    <p>Distância Total: {distanciaTotal}</p>
+                    <p className="distancia-total">Distância Total: {distanciaTotal}</p>
                 </div>
             )}
         </div>

@@ -33,3 +33,9 @@
 .rota-button:hover {
     background-color: #45a049; /* Cor de fundo verde mais escura ao passar por cima */
 }
+.distancia-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ad2828; /* Cor do texto */
+  }
