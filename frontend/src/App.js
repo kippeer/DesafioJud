@@ -1,19 +1,24 @@
 import React from 'react';
 import './App.css';
-import ClientesList from './components/ClientesList'; // Importa o componente ClientesList
+import ClientesList from './components/ClientesList';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Cadastro from './components/Cadastro'; // Importe o componente Cadastro
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Gerenciamento de Clientes</h1>
-      </header>
-      <main>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/cadastro" element={<Cadastro />} />
+          {/* Adicione mais rotas conforme necessário */}
+        </Routes>
         <ClientesList />
-        {/* Adicione mais componentes ou links aqui conforme necessário */}
-      </main>
-      <footer>Reservado para</footer>
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

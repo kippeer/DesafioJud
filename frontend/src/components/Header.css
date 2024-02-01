@@ -1,0 +1,53 @@
+/* Adicione este estilo ao seu arquivo de folha de estilo global ou local do componente */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navList li:not(:last-child) {
+    margin-right: 20px; /* Reduzi a margem para melhor aparência */
+  }
+  
+  .navList a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efeito de transição para a cor do texto */
+  }
+  
+  .navList a:hover {
+    color: #ffd700; /* Cor ao passar o mouse sobre os links */
+  }
+  
