@@ -12,10 +12,11 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
+          {/* Defina o path="/" para renderizar o ClientesList */}
+          <Route path="/" element={<ClientesList />} />
           <Route path="/cadastro" element={<Cadastro />} />
           {/* Adicione mais rotas conforme necessário */}
         </Routes>
-        <ClientesList />
         <Footer />
       </div>
     </Router>
