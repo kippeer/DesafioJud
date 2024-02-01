@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Cadastro from './components/Cadastro'; // Importe o componente Cadastro
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Rota from './components/Rota';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           {/* Defina o path="/" para renderizar o ClientesList */}
           <Route path="/" element={<ClientesList />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/rota" element={<Rota/>} />
           {/* Adicione mais rotas conforme necessário */}
         </Routes>
         <Footer />

@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer style={styles.footer}>
-      <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Desafio Facilita Juridico Ltda, Realizado por Fabio Tessaro.</p>
     </footer>
   );
 };
@@ -16,7 +16,7 @@ const styles = {
     color: '#fff',
     padding: '10px',
     textAlign: 'center',
-    position: 'fixed',
+    
     bottom: 0,
     width: '100%',
   },

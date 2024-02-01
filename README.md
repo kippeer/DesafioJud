@@ -43,6 +43,8 @@ Instale as dependências do Node.js:
 // dependencias utilizadas //
 npm install express pg
 npm install cors 
+npm install tsp-solver
+
 //
 
 
