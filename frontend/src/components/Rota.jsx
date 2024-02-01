@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Rota.css';  // Importe o arquivo CSS
+import { FaCalculator } from "react-icons/fa";
 
 const Rota = () => {
     const [clientesOrdenados, setClientesOrdenados] = useState([]);
@@ -34,11 +35,15 @@ const Rota = () => {
     return (
         <div className="rota-container">
             <button className="rota-button" onClick={calcularRotaOtimizada} disabled={calculandoRota}>
-                {calculandoRota ? 'Calculando Rota...' : 'Calcular Rota Otimizada'}
+                <div >
+                    <FaCalculator size="18" />
+                    
+                </div>{calculandoRota ? 'Calculando Rota...' : 'Calcular Rota Otimizada'} 
             </button>
+            
             {clientesOrdenados.length > 0 && (
                 <div className="rota-result">
-                    <h2>Lista de Clientes pela Ordem das Coordenadas:</h2>
+                    <h2>Clientes proximos</h2>
                     <table className="cliente-table">
                         <thead>
                             <tr>
@@ -59,6 +64,7 @@ const Rota = () => {
                     </table>
                     <p className="distancia-total">Distância Total: {distanciaTotal}</p>
                 </div>
+                
             )}
         </div>
     );

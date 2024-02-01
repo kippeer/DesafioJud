@@ -97,8 +97,11 @@ const CadastroCliente = () => {
           />
         </label>
         <br />
+        <div className='space'></div>
         <button type="submit" className="submit-button">
-          Cadastrar Cliente
+          <p>
+            Cadastrar Cliente
+          </p>
         </button>
       </form>
     </div>

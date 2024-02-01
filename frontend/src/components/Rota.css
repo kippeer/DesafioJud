@@ -1,10 +1,13 @@
 .cliente-table {
-    width: 80%; /* Ajuste a largura conforme necessário */
-    margin: 20px auto; /* Centraliza a tabela e adiciona um espaço superior */
+    width: 80%;
+    /* Ajuste a largura conforme necessário */
+    margin: 20px auto;
+    /* Centraliza a tabela e adiciona um espaço superior */
     border-collapse: collapse;
 }
 
-.cliente-table th, .cliente-table td {
+.cliente-table th,
+.cliente-table td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
@@ -14,28 +17,55 @@
     background-color: #f2f2f2;
 }
 
-.cliente-table td:nth-child(2), .cliente-table td:nth-child(3) {
-    width: 40px; /* Define uma largura para as colunas X e Y */
+.cliente-table td:nth-child(2),
+.cliente-table td:nth-child(3) {
+    width: 40px;
+    /* Define uma largura para as colunas X e Y */
 }
 
 .rota-button {
     margin-top: 30px;
-    background-color: #4CAF50; /* Cor de fundo verde */
-    color: white; /* Cor do texto branco */
-    padding: 10px 20px; /* Preenchimento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Adiciona cursor ao passar por cima */
-    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+    background-color: #4CAF50;
+    /* Cor de fundo verde */
+    color: white;
+    /* Cor do texto branco */
+    padding: 10px 20px;
+    /* Preenchimento interno */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    border: none;
+    /* Remove a borda */
+    border-radius: 5px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Adiciona cursor ao passar por cima */
+    transition: background-color 0.3s;
+    /* Adiciona uma transição suave na mudança de cor de fundo */
 }
 
 .rota-button:hover {
-    background-color: #45a049; /* Cor de fundo verde mais escura ao passar por cima */
+    background-color: #45a049;
+    /* Cor de fundo verde mais escura ao passar por cima */
 }
+
 .distancia-total {
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
-    color: #ad2828; /* Cor do texto */
-  }
+    color: #ad2828;
+    /* Cor do texto */
+}
+
+/* Adicione estas regras ao seu arquivo CSS */
+
+.fa-calculator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Ajuste conforme necessário */
+}
+
+.fa-calculator {
+    font-size: 20px;
+}

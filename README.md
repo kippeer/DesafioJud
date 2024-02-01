@@ -102,3 +102,18 @@ Substitua 10 pelo valor da coordenada X desejada e 20 pelo valor da coordenada Y
 
 
 ///////////////////////////////////
+
+
+frontend , 
+
+cd frontend 
+
+// dependencias utilizadas //
+npm install react-icons
+npm install  react-hook-form 
+npm install react-router-dom
+npm install axios
+
+para iniciar 
+
+npm start 

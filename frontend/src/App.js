@@ -19,7 +19,7 @@ function App() {
           <Route path="/rota" element={<Rota/>} />
           {/* Adicione mais rotas conforme necessário */}
         </Routes>
-        <Footer />
+        
       </div>
     </Router>
   );

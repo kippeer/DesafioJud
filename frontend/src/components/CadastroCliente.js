@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
 const CadastroCliente = ({ history }) => {
   const [cliente, setCliente] = useState({
     nome: '',
