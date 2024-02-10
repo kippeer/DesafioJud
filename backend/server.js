@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const clientesRoutes = require('./clientesRoutes');
 const rotaRoutes = require('./rotaRoutes');
-const pool = require('./db');
+
 
 const app = express();
 
