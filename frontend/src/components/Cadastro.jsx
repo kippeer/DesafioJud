@@ -23,7 +23,7 @@ const CadastroCliente = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://backend-nge53fxkp-kippeer.vercel.app/api/clientes', cliente);
+      const response = await axios.post('http://localhost:5000/api/clientes', cliente);
       console.log('Cliente cadastrado:', response.data);
       // Limpar o formulário após o cadastro bem-sucedido
       setCliente({
