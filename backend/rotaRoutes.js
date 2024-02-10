@@ -1,6 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('./db');
+const axios = require('axios'); // Importe o Axios
+const { ELEPHANTSQL_API_KEY } = process.env; // Obtenha a chave de API do ambiente
+
+// Configuração do Axios com a chave de API do ElephantSQL
+axios.defaults.headers.common['Authorization'] = `Bearer ${ELEPHANTSQL_API_KEY}`;
 
 // Rota para calcular a rota
 router.get('/calcula-rota', async (req, res) => {
