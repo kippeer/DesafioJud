@@ -22,7 +22,7 @@ const CadastroCliente = ({ history }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/clientes', cliente);
+      await axios.post('https://backend-nge53fxkp-kippeer.vercel.app/api/clientes', cliente);
       alert('Cliente cadastrado com sucesso!');
       // Redirecionar para a lista de clientes após o cadastro
       history.push('/clientes');

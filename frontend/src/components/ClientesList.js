@@ -17,7 +17,7 @@ const ClientesList = () => {
   useEffect(() => {
     const fetchClientes = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/clientes');
+        const response = await axios.get('https://backend-nge53fxkp-kippeer.vercel.app/api/clientes');
         setClientes(response.data);
         setClientesFiltrados(response.data); // Initialize filtered state with all clients
       } catch (error) {
